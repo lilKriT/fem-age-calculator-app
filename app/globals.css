@@ -27,8 +27,30 @@
   --color-gray-500: hsl(0, 1%, 44%);
 }
 
+* {
+  /* @apply outline outline-red-400; */
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-gray-100);
+  color: var(--color-gray-950);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-poppins-sans), Arial, Helvetica, sans-serif;
+}
+
+.label {
+  @apply flex flex-col justify-center items-start gap-2;
+
+  span:first-child {
+    @apply uppercase text-gray-500 text-[1rem] tracking-widest;
+  }
+
+  input {
+    @apply w-[calc(5ch+4rem)] px-8 py-4 border border-gray-200 rounded-lg;
+  }
+
+  span.error {
+    @apply text-red-400 text-[1rem] font-normal italic;
+  }
 }
