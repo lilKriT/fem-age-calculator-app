@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <section className="min-h-dvh flex items-center justify-center px-8 py-32">
-      <div className="bg-white p-16 rounded-3xl rounded-br-[10rem]">
+      <div className="bg-white w-4/5 max-w-210 p-16 rounded-3xl rounded-br-[10rem]">
         {/* Date form */}
         <form className="flex gap-8">
           <label className="label">
@@ -38,7 +38,7 @@ export default function Home() {
         {/* Decoration */}
         <div className="relative flex justify-end items-center">
           <div className="h-0.5 w-full bg-gray-200 rounded-full"></div>
-          <div className="bg-purple-500 p-6 rounded-full">
+          <div className="bg-purple-500 p-6 rounded-full hover:bg-black motion-safe:duration-300 ease-in-out">
             <Image
               src={"/icon-arrow.svg"}
               aria-hidden="true"
@@ -50,7 +50,17 @@ export default function Home() {
         </div>
 
         {/* Results */}
-        <p>-- years -- months -- days</p>
+        <div className="flex flex-col leading-[1.15] text-[clamp(3rem,8vw,4.5rem)] font-extrabold italic">
+          <span>
+            <span className="text-purple-500">--</span> years
+          </span>
+          <span>
+            <span className="text-purple-500">--</span> months
+          </span>
+          <span>
+            <span className="text-purple-500">--</span> days
+          </span>
+        </div>
       </div>
     </section>
   );

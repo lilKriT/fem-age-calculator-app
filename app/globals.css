@@ -47,7 +47,7 @@ body {
   }
 
   input {
-    @apply w-[calc(5ch+4rem)] px-8 py-4 border border-gray-200 rounded-lg;
+    @apply w-[calc(5ch+3rem)] px-6 py-2 border border-gray-200 rounded-lg;
   }
 
   span.error {
