@@ -16,11 +16,11 @@ export default function Home() {
   };
 
   return (
-    <section className="min-h-dvh flex items-center justify-center px-8 py-32">
-      <div className="bg-white w-4/5 max-w-210 p-16 rounded-3xl rounded-br-[10rem]">
+    <section className="min-h-dvh flex items-center justify-center px-4 md:px-8 py-32">
+      <div className="bg-white w-full max-w-210 py-16 px-8 md:px-16 rounded-3xl rounded-br-[10rem]">
         {/* Date form */}
         <form className="flex flex-col">
-          <div className="flex gap-8">
+          <div className="flex gap-4 md:gap-8">
             <label className="label">
               <span>Day</span>
               <input type="text" placeholder="DD" />

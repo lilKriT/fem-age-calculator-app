@@ -47,7 +47,7 @@ body {
   }
 
   input {
-    @apply w-[calc(5ch+3rem)] px-6 py-2 border border-gray-200 rounded-lg;
+    @apply w-[calc(5ch+1rem)] sm:w-[calc(5ch+3rem)] text-[clamp(1.5rem,5vw,2rem)] px-4 md:px-6 py-2 border border-gray-200 rounded-lg;
     @apply outline-none focus:ring-2 ring-purple-500;
   }
 
