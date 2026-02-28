@@ -112,7 +112,7 @@ export default function Home() {
             </label>
 
             <label
-              className={`label ${formState.errors.month && "label--error"}`}
+              className={`label ${(formState.errors.month || formState.errors.day?.message === "Must be a valid date") && "label--error"}`}
             >
               <span>Month</span>
               <input
@@ -126,7 +126,7 @@ export default function Home() {
             </label>
 
             <label
-              className={`label ${formState.errors.year && "label--error"}`}
+              className={`label ${(formState.errors.year || formState.errors.day?.message === "Must be a valid date") && "label--error"}`}
             >
               <span>Year</span>
               <input
